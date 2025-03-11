@@ -50,7 +50,7 @@ document.getElementById("prev").addEventListener("click", () => {
 let books = [];
 let activeCategory = null;
 
-// API dan kitoblarni olish
+
 async function fetchBooks() {
     try {
         const response = await fetch("https://fakerapi.it/api/v2/books?_quantity=51");
@@ -69,7 +69,7 @@ async function fetchBooks() {
     }
 }
 
-// Kategoriyalarni yuklash
+
 function loadCategories() {
     const categorySet = new Set(["All", ...books.map(book => book.category)]);
     const categoryList = document.getElementById("categoryList");
@@ -93,7 +93,7 @@ function loadCategories() {
     });
 }
 
-// Kitoblarni chiqarish
+
 function displayBooks(bookArray) {
     const bookList = document.getElementById("bookList");
     bookList.innerHTML = '';
@@ -113,7 +113,7 @@ function displayBooks(bookArray) {
     });
 }
 
-// Kategoriyaga qarab kitoblarni filtrlash
+
 function filterBooks(category) {
     if (category === "All") {
         displayBooks(books);
@@ -122,7 +122,7 @@ function filterBooks(category) {
     }
 }
 
-// Qidiruv tizimi
+
 document.getElementById("search").addEventListener("input", function() {
     const query = this.value.toLowerCase();
     const filteredBooks = books.filter(book => 
