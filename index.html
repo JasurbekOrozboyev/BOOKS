@@ -24,69 +24,69 @@
 </head>
 
 <body class="bg-white dark:bg-dark text-gray-900 dark:text-light transition-colors duration-300">
-    <div class="container w-[100%] m-auto">
-        <header class="p-4 shadow-md bg-white dark:bg-gray-800">
-            <div class="container mx-auto flex justify-between items-center">
-                <div class="flex items-center gap-4">
-                    <img src="https://meek-haupia-827c15.netlify.app/Assets/Images/logo.png" alt="logo"
-                        class="w-[40px] h-[40px]">
-                    <h1 class="text-xl font-bold text-gray-900 dark:text-white">BOOK SHOP</h1>
-                </div>
-                <nav>
-                    <ul class="hidden md:flex space-x-4 gap-[50px]">
-                        <li><a href="#" class="hover:text-blue-500 text-gray-900 dark:text-white">Home</a></li>
-                        <li><a href="#" class="hover:text-blue-500 text-gray-900 dark:text-white">Magazine</a></li>
-                        <li><a href="#" class="hover:text-blue-500 text-gray-900 dark:text-white">Books</a></li>
-                        <li><a href="#" class="hover:text-blue-500 text-gray-900 dark:text-white">Textbooks</a></li>
-                        <li><a href="#" class="hover:text-blue-500 text-gray-900 dark:text-white">Audiobooks</a></li>
-                    </ul>
-                </nav>
-                <button id="menu-btn" class="md:hidden text-gray-900 dark:text-white">☰</button>
-                <button id="dark-mode-toggle" class="ml-4 text-[20px]">🌙</button>
-            </div>
-        </header>
-        <div class="relative w-full mx-auto">
-            <div class="overflow-hidden relative">
-                <div id="slider" class="flex transition-transform duration-500">
-                    <img src="https://meek-haupia-827c15.netlify.app/Assets/Images/homeBackground.jpg"
-                        class="w-full object-cover">
-                    <img src="https://meek-haupia-827c15.netlify.app/Assets/Images/homeBackground2.jpg"
-                        class="w-full object-cover">
-                </div>
-            </div>
-            <button id="prev"
-                class="w-[40px] bg-gray-800 absolute left-[30px] top-1/2 transform -translate-y-1/2 p-2 text-white border border-black rounded-[50%]">❮</button>
-            <button id="next"
-                class="w-[40px] bg-gray-800 absolute right-[30px] top-1/2 transform -translate-y-1/2 p-2 text-white border border-black rounded-[50%]">❯</button>
+<div class="container w-[100%] m-auto">
+<header class="p-4 shadow-md bg-white dark:bg-gray-800">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <img src="https://meek-haupia-827c15.netlify.app/Assets/Images/logo.png" alt="logo"
+                class="w-[40px] h-[40px]">
+            <h1 class="text-xl font-bold text-gray-900 dark:text-white">BOOK SHOP</h1>
+        </div>
+        <nav>
+            <ul class="hidden md:flex space-x-4 gap-[50px]">
+                <li><a href="#" class="hover:text-blue-500 text-gray-900 dark:text-white">Home</a></li>
+                <li><a href="#" class="hover:text-blue-500 text-gray-900 dark:text-white">Magazine</a></li>
+                <li><a href="#" class="hover:text-blue-500 text-gray-900 dark:text-white">Books</a></li>
+                <li><a href="#" class="hover:text-blue-500 text-gray-900 dark:text-white">Textbooks</a></li>
+                <li><a href="#" class="hover:text-blue-500 text-gray-900 dark:text-white">Audiobooks</a></li>
+            </ul>
+        </nav>
+        <button id="menu-btn" class="md:hidden text-gray-900 dark:text-white">☰</button>
+        <button id="dark-mode-toggle" class="ml-4 text-[20px]">🌙</button>
+    </div>
+</header>
+<div class="relative w-full mx-auto">
+    <div class="overflow-hidden relative">
+        <div id="slider" class="flex transition-transform duration-500">
+            <img src="https://meek-haupia-827c15.netlify.app/Assets/Images/homeBackground.jpg"
+                class="w-full object-cover">
+            <img src="https://meek-haupia-827c15.netlify.app/Assets/Images/homeBackground2.jpg"
+                class="w-full object-cover">
         </div>
     </div>
-    
+    <button id="prev"
+        class="w-[40px] bg-gray-800 absolute left-[30px] top-1/2 transform -translate-y-1/2 p-2 text-white border border-black rounded-[50%]">❮</button>
+    <button id="next"
+        class="w-[40px] bg-gray-800 absolute right-[30px] top-1/2 transform -translate-y-1/2 p-2 text-white border border-black rounded-[50%]">❯</button>
+</div>
+</div>
 
 
 
-    <div class="conatiner w-full p-10 mx-auto flex flex-col gap-6">
-        
-        
-        <div class="flex gap-8">
-            <!-- Kategoriyalar -->
-            <div class="w-1/4 bg-white p-4 shadow-md rounded">
-                <h2 class="text-xl font-bold mb-4">Categories</h2>
-                <ul id="categoryList" class="space-y-2">
-                    <li class="category-item px-2 py-1 rounded cursor-pointer active" 
-                data-category="All">All Collections</li>
-                </ul>
-            </div>
-    
-            <!-- Kitoblar ro‘yxati -->
-            <div class="w-3/4">
-                <div class="w-full flex items-center gap-4 mb-4">
-                    <input type="text" id="search" class="w-full p-2 border rounded" placeholder="Kitob yoki muallif nomini kiriting..." onkeyup="searchBooks()">
-                </div>
-            
-                <div id="bookList" class="grid grid-cols-2 md:grid-cols-3 gap-4"></div>
-            </div>
-        </div>
+
+<div class="conatiner w-full p-10 mx-auto flex flex-col gap-6">
+
+
+<div class="flex gap-8">
+    <!-- Kategoriyalar -->
+    <div class="w-1/4 bg-white p-4 shadow-md rounded">
+        <h2 class="text-xl font-bold mb-4">Categories</h2>
+        <ul id="categoryList" class="space-y-2">
+            <li class="category-item px-2 py-1 rounded cursor-pointer active" 
+        data-category="All">All Collections</li>
+        </ul>
     </div>
+
+    <!-- Kitoblar ro‘yxati -->
+    <div class="w-3/4">
+        <div class="w-full flex items-center gap-4 mb-4">
+            <input type="text" id="search" class="w-full p-2 border rounded" placeholder="Kitob yoki muallif nomini kiriting..." onkeyup="searchBooks()">
+        </div>
+    
+        <div id="bookList" class="grid grid-cols-2 md:grid-cols-3 gap-4"></div>
+    </div>
+</div>
+</div>
 
     
     <script src="./main.js"></script>
