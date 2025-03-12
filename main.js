@@ -23,9 +23,6 @@ darkModeToggle.addEventListener("click", () => {
   setDarkMode(!html.classList.contains("dark"));
 });
 
-
-
-
 let index = 0;
 const slides = document.querySelectorAll("#slider img");
 const totalSlides = slides.length;
@@ -43,9 +40,6 @@ document.getElementById("prev").addEventListener("click", () => {
     index * 100
   }%)`;
 });
-
-
-
 
 let books = [];
 let activeCategory = null;
@@ -68,7 +62,6 @@ try {
   console.error("Xatolik yuz berdi:", error);
 }
 }
-
 
 function loadCategories() {
 const categorySet = new Set(["All", ...books.map(book => book.category)]);
@@ -103,7 +96,7 @@ bookArray.forEach(book => {
   div.className = "p-4 bg-white rounded-lg shadow-md";
 
   div.innerHTML = `
-      <img src="https://avatars.mds.yandex.net/i?id=9840186b293969c6d0fe48a1556cfa2c_l-10701700-images-thumbs&n=13" class="w-full h-48 object-cover rounded">
+      <img src="${book.image}" class="w-full h-48 object-cover rounded">
       <h2 class="text-lg font-semibold mt-2">${book.title}</h2>
       <p class="text-sm text-gray-600">${book.author}</p>
       <p class="text-xs text-gray-500 mt-1">${book.category}</p>
